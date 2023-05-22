@@ -1,7 +1,9 @@
 # DDIA-Everyday
 阅读打卡活动
 
-友情链接： [CSAPP-学习群](https://github.com/ArkTicketTech/CSAPP-Notes)
+友情链接： 
+- [CSAPP-学习群](https://github.com/ArkTicketTech/CSAPP-Notes)
+- [每日阅读](https://github.com/ArkTicketTech/ReadingEveryday)
 
 <h3>本群残酷 谨慎进群❗️❗❗️</h3>
 
@@ -17,13 +19,13 @@
   - 打卡内容，雷同的部分超过50%的；
   - 坚持不到两周退群，请发退群红包；
   - N进宫；
-  - 退役群友可以继续抢两个月红包，之后请退群。
-  
+
+- 退役同学进入Readers群；之后可以针对完成的同学想一些奖励措施。
+- 进行一次分享，可以免打卡一周。
 
 如果本群感兴趣，也接受群规，请加群主微信并备注来意: wfnusee。谢谢！
 
 ## members
-@wfnuser @tommyjiang @echo3582 @vacuumcat @x-wqs @willhunger @danie10ne @bedrocktothetop
 
 ## retired
 
