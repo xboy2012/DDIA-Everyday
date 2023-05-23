@@ -13,6 +13,10 @@ while current_date <= end_date:
     
     # 创建目录
     os.makedirs(directory_path, exist_ok=True)
-    
+    # 在目录中创建 .gitkeep 文件
+    gitkeep_file = os.path.join(directory_path, '.gitkeep')
+    with open(gitkeep_file, 'w') as file:
+        pass
+
     # 增加一天
     current_date += datetime.timedelta(days=1)
