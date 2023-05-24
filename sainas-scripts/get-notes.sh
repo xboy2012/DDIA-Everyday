@@ -5,7 +5,8 @@
 current_dir=$(pwd)
 
 cd ../learning-notes
-git show HEAD:ddia-reading-note.md > $current_dir/temp_sainas.md
+git diff HEAD^ HEAD | grep '^+' |  sed 's/^+//' >  $current_dir/temp_sainas.md
+
 
 cd "$current_dir"
 
