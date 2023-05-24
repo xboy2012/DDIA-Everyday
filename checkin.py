@@ -21,7 +21,7 @@ for user in users:
     # 检查最近两天的所有文件名
     found = False
     for folder in [yesterday, day_before_yesterday]:
-        folder_path = folder.strftime('reading notes/%Y/%-m/%-d')
+        folder_path = folder.strftime('notes/%Y/%m/%d')
         folder_path = os.path.join(script_dir, folder_path)
         for root, dirs, files in os.walk(folder_path):
             for file in files:
