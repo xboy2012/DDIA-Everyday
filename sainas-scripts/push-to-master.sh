@@ -7,7 +7,7 @@ set -x
 filename=$(git status -s | grep "^A " )
 
 if [[ $(grep -c "^A " <<< $filename) -ne 1 ]]; then
-    echo "More than one file added"
+    echo "Expected one file, but got $(grep -c "^A " <<< $filename)"
     exit 1
 fi
 
