@@ -2,7 +2,6 @@
 
 import os
 import datetime
-import pytz
 
 script_path = os.path.abspath(__file__)
 script_dir = os.path.dirname(script_path)
@@ -13,7 +12,8 @@ with open(reader_path) as f:
     users = [line.strip() for line in f.readlines()]
 
 # 获取当前日期和前两天日期
-beijing_timezone = pytz.timezone('Asia/Shanghai')
+# timezone UTC+8
+beijing_timezone = datetime.timezone(datetime.timedelta(hours=8))
 today = datetime.datetime.now(beijing_timezone).date()
 yesterday = today - datetime.timedelta(days=1)
 day_before_yesterday = today - datetime.timedelta(days=2)
