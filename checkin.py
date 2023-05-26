@@ -1,5 +1,8 @@
+#!/usr/bin/env python3
+
 import os
 import datetime
+import pytz
 
 script_path = os.path.abspath(__file__)
 script_dir = os.path.dirname(script_path)
@@ -10,9 +13,15 @@ with open(reader_path) as f:
     users = [line.strip() for line in f.readlines()]
 
 # 获取当前日期和前两天日期
-today = datetime.date.today()
+beijing_timezone = pytz.timezone('Asia/Shanghai')
+today = datetime.datetime.now(beijing_timezone).date()
 yesterday = today - datetime.timedelta(days=1)
 day_before_yesterday = today - datetime.timedelta(days=2)
+print(
+    "今天是：{}, 检查过去两天打卡情况: {} {}".format(
+        today.isoformat(), yesterday.isoformat(), day_before_yesterday.isoformat()
+    )
+)
 
 missed = 0
 
